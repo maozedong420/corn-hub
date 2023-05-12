@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Our Products</title>
+		<link rel='stylesheet' href='../static/ourproducts.css'>
+	</head>
+	<body>
+		<table id="table">
+			<tr>
+				<td class="titlez"><a href="{{url_for('home')}}"><img src="../static/logo.png" style="position:absolute;top:5px;left:5px;height:95px;width:95px;"></a></td>
+				<td class="titlez"><a href="{{url_for ('ourlocations')}}" style="text-decoration:none;color:rgba(255, 242, 144, 0.862);font-size:26px;font-family:cursive">Our Locations</a></td>
+				<td class="titlez"><a href="{{url_for ('ourproducts')}}"style="text-decoration:none;color:rgba(255, 242, 144, 0.862);font-size:26px;font-family:cursive">Our Products</a></td>
+				<td class="titlez"><a href="{{url_for ('supportus')}}"style="text-decoration:none;color:rgba(255, 242, 144, 0.862);font-size:26px;font-family:cursive">Support Us</a></td>
+				<td class="titlez"><a id='amogus' href="{{url_for ('amogus')}}"style="text-decoration:none;font-size:26px;font-family:cursive">Amogus</a></td>
+			</tr>
+		</table>	
+		<a href="{{url_for ('shoppingcart')}}"><img src="../static/cart.png" class="topright"></a>
+		<form method='post'>
+		<br>
+		<div class="bg_box">
+		<table>
+			<tr>
+				<td><img src="../static/corn.jpg" style="width:273px;height:183px;"></td>
+				<td class='hometext' class='pads'><b>Corn</b></td>
+				<td class='hometext'>Price: $0.60/cob</td>
+				<td class='quantity'>Quantity:</td>
+				<td><input name="qcorn"></td>
+				<td><input type='submit' value='Add to Cart'></td>
+			</tr>
+			<tr>
+				<td><img src="../static/corndog.jpg" style="width:273px;height:183px;"></td>
+				<td class='hometext' class='pads'><b>Corndog</b></td>
+				<td class='hometext'>Price: $2.00/corndog</td>
+				<td class='quantity'>Quantity:</td>
+				<td><input name="qcorndog"></td>
+				<td><input type='submit' value='Add to Cart'></td>
+			</tr>
+			<tr>
+				<td><img src="../static/biofuel.jpg" style="width:273px;height:183px;"></td>
+				<td class='hometext' class='pads'><b>Biofuel</b></td>
+				<td class='hometext'>Price: $20.00/barrel</td>
+				<td class='quantity'>Quantity:</td>
+				<td><input name="qbiofuel"></td>
+				<td><input type='submit' value='Add to Cart'></td>
+			</tr>
+			<tr>
+				<td><img src="../static/seeds.jpg" style="width:273px;height:183px;"></td>
+				<td class='hometext' class='pads'><b>Corn Seeds</b></td>
+				<td class='hometext'>Price: $1.00/0.1kg</td>
+				<td class='quantity'>Quantity:</td>
+				<td><input name="qcornseeds"></td>
+				<td><input type='submit' value='Add to Cart'></td>
+			</tr>
+			<tr>
+				<td><img src="../static/buttercorn.jpg" style="width:273px;height:183px;"></td>
+				<td class='hometext' class='pads'><b>Butter Corn</b></td>
+				<td class='hometext'>Price: $1.20/serving</td>
+				<td class='quantity'>Quantity:</td>
+				<td><input name="qbuttercorn"></td>
+				<td><input type='submit' value='Add to Cart'></td>
+			</tr>
+			<tr>
+				<td><img src="../static/corncake.jpg" style="width:273px;height:183px;"></td>
+				<td class='hometext' class='pads'><b>Corn Cake</b></td>
+				<td class='hometext'>Price: $6.00/cake</td>
+				<td class='quantity'>Quantity:</td>
+				<td><input name="qcorncake"></td>
+				<td><input type='submit' value='Add to Cart'></td>
+			</tr>
+			<tr>
+				<td><img src="../static/starch.jpg" style="width:273px;height:183px;"></td>
+				<td class='hometext' class='pads'><b>Starch</b></td>
+				<td class='hometext' >Price: $3.00/0.1kg</td>
+				<td class='quantity'>Quantity:</td>
+				<td><input name="qstarch"></td>
+				<td><input type='submit' value='Add to Cart'></td>
+			</tr>
+			<tr>
+				<td><img src="../static/popcorn.jpg" style="width:273px;height:183px;"></td>
+				<td class='hometext' class='pads'><b>Popcorn</b></td>
+				<td class='hometext'>Price: $4.00/packet</td>
+				<td class='quantity'>Quantity:</td>
+				<td><input name="qpopcorn"></td>
+				<td><input type='submit' value='Add to Cart'></td>
+			</tr>
+			<tr>
+				<td><img src="../static/unicorn.jpg" style="width:273px;height:183px;"></td>
+				<td class='hometext' class='pads'><b>Unicorn</b></td>
+				<td class='hometext'>Price: $4.00/unicorn</td>
+				<td class='quantity'>Quantity:</td>
+				<td><input name="qunicorn"></td>
+				<td><input type='submit' value='Add to Cart'></td>
+			</tr>
+		</table>
+		</div>
+		</form>
+	</body>
+</html>

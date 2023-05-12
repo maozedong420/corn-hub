@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Shopping Cart</title>
+		<link rel='stylesheet' href='../static/shoppingcart.css'>
+	</head>
+	<body>
+		<h1 class="hometext">Shopping Cart</h1>
+		{% if megalist==[] %}
+		<p class="hometext">you have not ordered yet, go order then you come back</p>
+		{% else %}
+		<h2 class="hometext">Receipt ID = {{ReceiptID}}</h2>
+		<h3 class="hometext">Please confirm your order:</h3>
+		<table>
+			<tr>
+				<td class="hometext">Item</td>
+				<td class="hometext">Quantity</td>
+				<td class="hometext">Price</td>
+			</tr>
+			{% for element in megalist %}
+			<tr>
+				<td class="hometext">{{element[0]}}</td>
+				<td class="hometext">{{element[1]}}</td>
+				<td class="hometext"> {{element[2]}}</td>
+			</tr>
+			{% endfor %}
+		</table>
+		<p class="hometext">Subtotal: {{ total_price }}</p>
+		<form method="post">
+			<p class='inline' 
+			style = "font-family:'Times New Roman', Times, serif;
+			position: relative; 
+			font-size: 30px;
+			color:rgba(0, 0, 0, 0.862);
+			padding-right:5px;">Select location:</p>
+			<select name="location">
+				<option value='Paya Lebar Airport'>Paya Lebar Airport</option>
+				<option value='Loyang'>Loyang</option>
+				<option value='Ang Mo Kio'>Ang Mo Kio</option>
+				<option value='NTU'>NTU</option>
+				<option value='Bishan'>Bishan</option>
+				<option value='Jurong Island'>Jurong Island</option>
+				<option value='Al-Khadraa'>البصرة(Al-Khadraa)</option>
+			</select>
+			<br><br>
+			<input name='confirmorder' type='submit' value='Confirm Order'>
+		</form>
+	{% endif %}
+	</body>
+</html>
+			

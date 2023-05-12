@@ -1,0 +1,20 @@
+.hometext {text-align:center ; 
+            font-family:cursive;
+            position: relative; top:-70px ;
+            font-size: 105px;
+            color:rgba(255, 242, 144, 0.862)
+        }
+.titlez {padding-right:110px}
+.topright {position: absolute ; top:15px;right:15px; height:70px;width:75px;}
+#amogus {color: red}
+table{
+    padding-top:15px;
+    padding-left:60px;
+}
+body{
+    background:url("background2.jpeg") center center fixed;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+

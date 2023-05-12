@@ -1,0 +1,8 @@
+body {background: rgb(247, 243, 152)}
+.inline {display:inline}
+.hometext { font-family:'Times New Roman', Times, serif;
+    position: relative; 
+    font-size: 30px;
+    color:rgba(0, 0, 0, 0.862);
+    padding-right:50px;
+}

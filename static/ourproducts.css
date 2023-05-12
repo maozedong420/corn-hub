@@ -1,0 +1,33 @@
+.topright {position: absolute ; top:15px;right:15px; height:70px;width:75px;}
+#amogus {color: red}
+body {background:yellow}
+body{
+    background:url("background2.jpeg") center center fixed;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.pads {padding-right:30px}
+.titlez {padding-right:110px}
+.hometext {text-align:center; 
+    font-family:'Times New Roman', Times, serif;
+    position: relative; 
+    font-size: 30px;
+    color:rgba(255, 242, 144, 0.862);
+    padding-right:50px;
+}
+.quantity {text-align:center; 
+    font-family:'Times New Roman', Times, serif;
+    position: relative; 
+    font-size: 30px;
+    color:rgba(255, 242, 144, 0.862);
+}
+.bg_box {
+    background-color: rgb(45, 42, 42);
+    margin: auto;
+    height: 100%;
+    width: 85%;
+}
+#table{
+    padding-top:15px;
+    padding-left:60px;
+}

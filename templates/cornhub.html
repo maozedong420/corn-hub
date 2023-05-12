@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Corn Hub</title>
+		<link rel='stylesheet' href='../static/cornhub.css'>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td class="titlez"><a href="{{url_for('home')}}"><img src="../static/logo.png" style="position:absolute;top:5px;left:5px;height:95px;width:95px;"></a></td>
+				<td class="titlez"><a href="{{url_for ('ourlocations')}}" style="text-decoration:none;color:rgba(255, 242, 144, 0.862);font-size:26px;font-family:cursive">Our Locations</a></td>
+				<td class="titlez"><a href="{{url_for ('ourproducts')}}"style="text-decoration:none;color:rgba(255, 242, 144, 0.862);font-size:26px;font-family:cursive">Our Products</a></td>
+				<td class="titlez"><a href="{{url_for ('supportus')}}"style="text-decoration:none;color:rgba(255, 242, 144, 0.862);font-size:26px;font-family:cursive">Support Us</a></td>
+				<td class="titlez"><a id='amogus' href="{{url_for ('amogus')}}"style="text-decoration:none;font-size:26px;font-family:cursive">Amogus</a></td>
+			</tr>
+		</table>	
+		<a href="{{url_for ('shoppingcart')}}"><img src="../static/cart.png" class="topright"></a>	
+		<h1 class='hometext'>Welcome to Cornhub</h1>
+		<p></p>
+	</body>
+</html>

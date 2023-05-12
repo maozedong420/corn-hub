@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Our Locations</title>
+		<link rel='stylesheet' href='../static/ourlocations.css'>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td class="titlez"><a href="{{url_for('home')}}"><img src="../static/logo.png" style="position:absolute;top:5px;left:5px;height:95px;width:95px;"></a></td>
+				<td class="titlez"><a href="{{url_for ('ourlocations')}}" style="text-decoration:none;color:rgba(255, 242, 144, 0.862);font-size:26px;font-family:cursive">Our Locations</a></td>
+				<td class="titlez"><a href="{{url_for ('ourproducts')}}"style="text-decoration:none;color:rgba(255, 242, 144, 0.862);font-size:26px;font-family:cursive">Our Products</a></td>
+				<td class="titlez"><a href="{{url_for ('supportus')}}"style="text-decoration:none;color:rgba(255, 242, 144, 0.862);font-size:26px;font-family:cursive">Support Us</a></td>
+				<td class="titlez"><a id='amogus' href="{{url_for ('amogus')}}"style="text-decoration:none;font-size:26px;font-family:cursive">Amogus</a></td>
+			</tr>
+		</table>	
+		<a href="{{url_for ('shoppingcart')}}"><img src="../static/cart.png" class="topright"></a>	
+		<br>
+		<br>
+		<div class="bg_box">
+			<h1 class = "hometext-title">These are our locations:</h1>
+			<p class="hometext">You can arrive at these locations either to purchase our products or to collect your pre-ordered products🌽</p>
+			<h2 class = "hometext-title">Singapore</h2>
+			<p class = "hometext">161 Airport Rd, Singapore 534193 (Paya Lebar Airport)</p>
+			<p class = "hometext">56 Loyang Way, #02-10 Loyang, Enterprise Building, Singapore 508775 (Loyang)</p>
+			<p class = "hometext">628 Ang Mo Kio Ave 4, Singapore 560628 (Ang Mo Kio)</p>
+			<p class = "hometext">30 Nanyang Cres, Singapore 637659 (NTU)</p>
+			<p class = "hometext">1 Raffles Institution Ln, Singapore 575954 (Bishan)</p>
+			<p class = "hometext">21A Meranti Cres, 627449 (Jurong Island)</p>
+			<h2 class = "hometext-title">Basrah</h2>
+			<p class = "hometext">GRG5+6CC، البصرة (Al-Khadraa)</p>
+		</div>
